@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 pojoArrayList.add(new Pojo("Ninth","Ninth Titie","kkkkkk"));
             }
             if(i==10){
-                pojoArrayList.add(new Pojo("Tenth","Tenth Titie","kkkkkk"));
+                pojoArrayList.add(new Pojo("Tenth","Tenth Titie","njnn"));
             }
             if(i==11){
                 pojoArrayList.add(new Pojo("Eleventh","Eleventh Titie","kkkkkk"));
