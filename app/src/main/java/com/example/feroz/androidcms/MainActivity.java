@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 pojoArrayList.add(new Pojo("Eighth","Eighth Titie","kkkkkk"));
             }
             if(i==9){
-                pojoArrayList.add(new Pojo("Ninth","Ninth Titie","kkkkkk"));
+                pojoArrayList.add(new Pojo("Ninth","Ninth Titie","mm"));
             }
             if(i==10){
                 pojoArrayList.add(new Pojo("Tenth","Tenth Titie","njnn"));
@@ -138,5 +138,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
     }
 }
