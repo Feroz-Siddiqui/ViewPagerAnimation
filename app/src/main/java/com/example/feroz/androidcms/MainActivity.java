@@ -24,7 +24,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private LockableViewPager viewPager;
+    private static LockableViewPager viewPager;
     private ArrayList<Pojo> pojoArrayList;
     private ViewPagerAdapter viewPagerAdapter;
     @Override
@@ -155,8 +155,19 @@ public class MainActivity extends AppCompatActivity {
         } catch (IllegalAccessException e) {
         }
 
+        viewPager.setSwipeLocked(true);
+
     }
 
 
+    public static void unlockViewPager(){
+        viewPager.setSwipeLocked(false);
+
+    }
+
+    public static void lockViewPager(){
+        viewPager.setSwipeLocked(true);
+
+    }
 
 }
