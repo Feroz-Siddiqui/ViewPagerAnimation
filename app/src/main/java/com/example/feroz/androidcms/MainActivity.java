@@ -7,7 +7,6 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Interpolator;
 
 import com.eftimoff.viewpagertransformers.BackgroundToForegroundTransformer;
-import com.eftimoff.viewpagertransformers.CubeInTransformer;
 import com.eftimoff.viewpagertransformers.DefaultTransformer;
 import com.eftimoff.viewpagertransformers.DepthPageTransformer;
 import com.eftimoff.viewpagertransformers.DrawFromBackTransformer;
@@ -45,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
                 pojoArrayList.add(new Pojo("First","Third Titie","kkkkkk"));
             }
             if(i==3){
-                pojoArrayList.add(new Pojo("Third","Third Titie","kkkkkk"));
+                pojoArrayList.add(new Pojo("Second","Third sss","kkkkkk"));
             }
             if(i==4){
-                pojoArrayList.add(new Pojo("Forth","Forth Titie","kkkkkk"));
+                pojoArrayList.add(new Pojo("Second","Forth Titie","kkkkkk"));
             }
             if(i==5){
-                pojoArrayList.add(new Pojo("Fifth","Fifth Titie","kkkkkk"));
+                pojoArrayList.add(new Pojo("Second","Fifth Titie","kkkkkk"));
             }
             if(i==6){
                 pojoArrayList.add(new Pojo("Sixth","Sixth Titie","kkkkkk"));
@@ -97,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }else if(position == 2){
                     //ForegroundToBackgroundTransformer
-                    viewPager.setPageTransformer(true, new CubeInTransformer());
+                    viewPager.setPageTransformer(true, new ForegroundToBackgroundTransformer());
 
                 }else if(position == 3){
                     viewPager.setPageTransformer(true, new ForegroundToBackgroundTransformer());
@@ -160,14 +159,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public static void unlockViewPager(){
-        viewPager.setSwipeLocked(false);
+   public static void nextViewpager(){
+       if(viewPager.getCurrentItem() !=viewPager.getAdapter().getCount() )
+           viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
+   }
 
-    }
-
-    public static void lockViewPager(){
-        viewPager.setSwipeLocked(true);
-
+    public static void previousViewpager(){
+        if(viewPager.getCurrentItem() !=0 )
+            viewPager.setCurrentItem(viewPager.getCurrentItem()-1);
     }
 
 }

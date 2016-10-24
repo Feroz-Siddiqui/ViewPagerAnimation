@@ -51,14 +51,14 @@ public class FirstFragment  extends Fragment {
                 if(subtitle2.getVisibility() == View.VISIBLE) {
                     Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.exit_to_left);
-                    slide_down.setDuration(1000);
+                    slide_down.setDuration(400);
                     subtitle2.startAnimation(slide_down);
                     subtitle2.setVisibility(View.GONE);
 
                 }else if(subtitle1.getVisibility() == View.VISIBLE) {
                     Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.exit_to_left);
-                    slide_down.setDuration(1000);
+                    slide_down.setDuration(400);
                     slide_down.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
@@ -78,7 +78,7 @@ public class FirstFragment  extends Fragment {
 
                     Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.slide_down);
-                    slide_down.setDuration(1000);
+                    slide_down.setDuration(400);
                     slide_down.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
@@ -98,7 +98,7 @@ public class FirstFragment  extends Fragment {
                 else if (subtitle.getVisibility() == View.VISIBLE) {
                     Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.slide_down);
-                    slide_down.setDuration(1000);
+                    slide_down.setDuration(400);
                     slide_down.setAnimationListener(new Animation.AnimationListener() {
                         @Override
                         public void onAnimationStart(Animation animation) {
@@ -113,7 +113,10 @@ public class FirstFragment  extends Fragment {
                         public void onAnimationRepeat(Animation animation) {
                         }
                     });
-                    subtitle.startAnimation(slide_down);                }
+                    subtitle.startAnimation(slide_down);                }else {
+                    MainActivity.previousViewpager();
+
+                }
                 System.out.println("right");
             }
             public void onSwipeLeft() {
@@ -126,14 +129,14 @@ public class FirstFragment  extends Fragment {
                         subtitle.setText(getArguments().getString(SUBTITLE));
                         Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                                 R.anim.slide_up);
-                        slide_down.setDuration(1000);
+                        slide_down.setDuration(400);
                         subtitle.startAnimation(slide_down);
                     }
                 }else if(imageView.getVisibility() == View.GONE){
 
                     Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.enter_from_left);
-                    slide_down.setDuration(1000);
+                    slide_down.setDuration(400);
                     imageView.setVisibility(View.VISIBLE);
                     imageView.startAnimation(slide_down);
 
@@ -143,7 +146,7 @@ public class FirstFragment  extends Fragment {
                     subtitle1.setText("this is subtitle 1");
                     Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.enter_from_left);
-                    slide_down.setDuration(1000);
+                    slide_down.setDuration(400);
                     subtitle1.startAnimation(slide_down);
 
                 }else if(subtitle2.getVisibility() == View.GONE){
@@ -151,10 +154,10 @@ public class FirstFragment  extends Fragment {
                     subtitle2.setText("this is subtitle 2");
                     Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.slide_right_in);
-                    slide_down.setDuration(1000);
+                    slide_down.setDuration(400);
                     subtitle2.startAnimation(slide_down);
                 }else{
-                    MainActivity.unlockViewPager();
+                    MainActivity.nextViewpager();
 
                 }
 

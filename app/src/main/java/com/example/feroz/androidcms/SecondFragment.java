@@ -3,8 +3,10 @@ package com.example.feroz.androidcms;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -17,6 +19,7 @@ public class SecondFragment  extends Fragment {
     public static final String SUBTITLE = "SUBTITLE";
     private TextView title;
     private TextView subtitle;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final int position = getArguments().getInt(EXTRA_POSITION);
@@ -32,6 +35,33 @@ public class SecondFragment  extends Fragment {
         if(getArguments().getString(SUBTITLE) != null){
             subtitle.setText(getArguments().getString(SUBTITLE));
         }
+
+       final RelativeLayout relativeLayout = (RelativeLayout) view.findViewById(R.id.ggg);
+
+
+        relativeLayout.setOnTouchListener(new OnSwipeTouchListener(getContext()) {
+            public void onSwipeTop() {
+                System.out.println("top");
+            }
+            public void onSwipeRight() {
+                MainActivity.previousViewpager();
+                System.out.println("right");
+            }
+            public void onSwipeLeft() {
+                System.out.println("left");
+                MainActivity.nextViewpager();
+
+
+            }
+            public void onSwipeBottom() {
+                System.out.println("bottom");
+            }
+
+            public boolean onTouch(View v, MotionEvent event) {
+                return gestureDetector.onTouchEvent(event);
+            }
+        });
+
 
         System.out.println("SecondFragment ");
         return  view;
