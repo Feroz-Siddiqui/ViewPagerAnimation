@@ -3,6 +3,8 @@ package com.example.feroz.androidcms;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.Interpolator;
 
 import com.eftimoff.viewpagertransformers.BackgroundToForegroundTransformer;
 import com.eftimoff.viewpagertransformers.CubeInTransformer;
@@ -18,17 +20,18 @@ import com.eftimoff.viewpagertransformers.TabletTransformer;
 import com.eftimoff.viewpagertransformers.ZoomInTransformer;
 import com.eftimoff.viewpagertransformers.ZoomOutTranformer;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private ViewPager viewPager;
+    private LockableViewPager viewPager;
     private ArrayList<Pojo> pojoArrayList;
     private ViewPagerAdapter viewPagerAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        viewPager = (ViewPager) findViewById(R.id.viewPager1234);
+        viewPager = (LockableViewPager) findViewById(R.id.viewPager1234);
         pojoArrayList = new ArrayList<>();
         for(int i =0; i<14; i++){
             if(i==0){
@@ -138,6 +141,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        try {
+            Field mScroller;
+            mScroller = ViewPager.class.getDeclaredField("mScroller");
+            mScroller.setAccessible(true);
+            Interpolator sInterpolator = new AccelerateInterpolator();
+
+            FixedSpeedScroller scroller = new FixedSpeedScroller(viewPager.getContext(),  sInterpolator);
+            // scroller.setFixedDuration(5000);
+            mScroller.set(viewPager, scroller);
+        } catch (NoSuchFieldException e) {
+        } catch (IllegalArgumentException e) {
+        } catch (IllegalAccessException e) {
+        }
 
     }
+
+
+
 }

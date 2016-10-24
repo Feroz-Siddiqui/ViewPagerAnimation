@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Feroz on 21-10-2016.
@@ -33,37 +34,22 @@ public class FirstFragment  extends Fragment {
         if(getArguments().getString(TITLE) != null){
             title.setText(getArguments().getString(TITLE));
         }
-        relativeLayout.setOnTouchListener(new View.OnTouchListener() {
+        relativeLayout.setOnTouchListener(new OnSwipeTouchListener(getContext()) {
+            public void onSwipeTop() {
+                Toast.makeText(getContext(), "top", Toast.LENGTH_SHORT).show();
+            }
+            public void onSwipeRight() {
+                Toast.makeText(getContext(), "right", Toast.LENGTH_SHORT).show();
+            }
+            public void onSwipeLeft() {
+                Toast.makeText(getContext(), "left", Toast.LENGTH_SHORT).show();
+            }
+            public void onSwipeBottom() {
+                Toast.makeText(getContext(), "bottom", Toast.LENGTH_SHORT).show();
+            }
 
-            @Override
             public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction())
-
-                {
-                    case MotionEvent.ACTION_DOWN: {
-                        oldTouchValue = event.getX();
-                        break;
-                    }
-                    case MotionEvent.ACTION_UP: {
-                        float currentX = event.getX();
-                        if (oldTouchValue < currentX) {
-                            // swiped left
-                            subtitle.setVisibility(View.GONE);
-
-
-                        }
-                        if (oldTouchValue > currentX) {
-                            if(getArguments().getString(SUBTITLE) != null){
-                                subtitle.setVisibility(View.VISIBLE);
-                                subtitle.setText(getArguments().getString(SUBTITLE));
-                            }
-                            // swiped right
-                        }
-                        break;
-                    }
-                }
-                System.out.println("TOuch ");
-                return false;
+                return gestureDetector.onTouchEvent(event);
             }
         });
 
