@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.feroz.androidcms.cmstemplate.OnSwipeTouchListener;
+
 /**
  * Created by Feroz on 21-10-2016.
  */

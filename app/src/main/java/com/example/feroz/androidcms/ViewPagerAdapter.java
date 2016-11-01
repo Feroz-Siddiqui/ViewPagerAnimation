@@ -4,6 +4,17 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.view.ViewGroup;
+
+import com.example.feroz.androidcms.cmsslide.CMSSlide;
+import com.example.feroz.androidcms.cmstemplate.NoContentFragment;
+import com.example.feroz.androidcms.cmstemplate.OnlyListFragment;
+import com.example.feroz.androidcms.cmstemplate.OnlyParagraphImageFragment;
+import com.example.feroz.androidcms.cmstemplate.OnlyTitleFragment;
+import com.example.feroz.androidcms.cmstemplate.OnlyTitleImageFragment;
+import com.example.feroz.androidcms.cmstemplate.OnlyTitleListFragment;
+import com.example.feroz.androidcms.cmstemplate.OnlyTitleParagraphImageFragment;
+import com.example.feroz.androidcms.cmstemplate.TwoTitleFragment;
 
 import java.util.ArrayList;
 
@@ -12,10 +23,10 @@ import java.util.ArrayList;
  */
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
-    private ArrayList<Pojo> pojoArrayList;
-    public ViewPagerAdapter(android.support.v4.app.FragmentManager fm,ArrayList<Pojo> pojoArrayList) {
+    private ArrayList<CMSSlide> cmsSlides;
+    public ViewPagerAdapter(android.support.v4.app.FragmentManager fm,ArrayList<CMSSlide> cmsSlides) {
         super(fm);
-        this.pojoArrayList = pojoArrayList;
+        this.cmsSlides = cmsSlides;
     }
 
     @Override
@@ -25,94 +36,32 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
 
         bundle.putInt(FirstFragment.EXTRA_POSITION, position );
+        bundle.putSerializable("CMSSLIDE",cmsSlides.get(position));
 
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("First")){
-            fragment = new FirstFragment();
-            bundle.putString(FirstFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(FirstFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Second")){
-            fragment = new SecondFragment();
-            bundle.putString(SecondFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(SecondFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Third")){
-            fragment = new ThirdFragment();
-            bundle.putString(ThirdFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(ThirdFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Forth")){
-            fragment = new ForthFragment();
-            bundle.putString(ForthFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(ForthFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Fifth")){
-            fragment = new FifthFragment();
-            bundle.putString(FifthFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(FifthFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Sixth")){
-            fragment = new SixthFragment();
-            bundle.putString(SixthFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(SixthFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Seventh")){
-            fragment = new SeventhFragment();
-            bundle.putString(SeventhFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(SeventhFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Eighth")){
-            fragment = new EighthFragment();
-            bundle.putString(EighthFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(EighthFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Ninth")){
-            fragment = new NinthFragment();
-            bundle.putString(NinthFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(NinthFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Tenth")){
-            fragment = new TenthFragment();
-            bundle.putString(TenthFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(TenthFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Eleventh")){
-            fragment = new EleventhFragment();
-            bundle.putString(EleventhFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(EleventhFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Twelth")){
-            fragment = new TwelthFragment();
-            bundle.putString(TwelthFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(TwelthFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
-        }
-        if(pojoArrayList.get(position).getName().equalsIgnoreCase("Thirteenth")){
-            fragment = new ThirteenthFragment();
-            bundle.putString(ThirteenthFragment.TITLE, pojoArrayList.get(position).getTitle() );
-            bundle.putString(ThirteenthFragment.SUBTITLE, pojoArrayList.get(position).getSubtitle() );
-
+        if(cmsSlides.get(position).getTemplateName() != null){
+            System.out.println("Templates name "+cmsSlides.get(position).getTemplateName());
+            if(cmsSlides.get(position).getTemplateName().equalsIgnoreCase("ONLY_TITLE")){
+                fragment = new OnlyTitleFragment();
+            }else if(cmsSlides.get(position).getTemplateName().equalsIgnoreCase("NO_CONTENT")){
+                fragment = new NoContentFragment();
+            }else if(cmsSlides.get(position).getTemplateName().equalsIgnoreCase("ONLY_TITLE_LIST")){
+                fragment = new OnlyTitleListFragment();
+            }else if(cmsSlides.get(position).getTemplateName().equalsIgnoreCase("ONLY_LIST")){
+                fragment = new OnlyListFragment();
+            }else if(cmsSlides.get(position).getTemplateName().equalsIgnoreCase("ONLY_TITLE_IMAGE")){
+                fragment = new OnlyTitleImageFragment();
+            }else if(cmsSlides.get(position).getTemplateName().equalsIgnoreCase("ONLY_TITLE_PARAGRAPH_IMAGE")){
+                fragment = new OnlyTitleParagraphImageFragment();
+            }else if(cmsSlides.get(position).getTemplateName().equalsIgnoreCase("ONLY_PARAGRAPH_IMAGE")){
+                fragment = new OnlyParagraphImageFragment();
+            }else if(cmsSlides.get(position).getTemplateName().equalsIgnoreCase("ONLY_2TITLE")){
+                fragment = new TwoTitleFragment();
+            }
+            else {
+                fragment = new FirstFragment();
+            }
+        }else{
+        fragment=new FirstFragment();
         }
 
         fragment.setArguments(bundle);
@@ -121,12 +70,15 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return pojoArrayList.size();
+        return cmsSlides.size();
     }
 
     @Override
     public Parcelable saveState() {
         return null;
     }
-
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        // TODO Auto-generated method stub
+    }
 }

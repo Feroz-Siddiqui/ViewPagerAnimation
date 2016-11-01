@@ -1,0 +1,2174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<presentation>
+    <slide background="#ffffff" background_transition="zoom" image_bg="none" template="ONLY_TITLE" transition="concave">
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul>
+            <li>
+                <description></description>
+                <id>0</id>
+                <p></p>
+            </li>
+            <li>
+                <description></description>
+                <id>0</id>
+                <p></p>
+            </li>
+            <li>
+                <description></description>
+                <id>0</id>
+                <p></p>
+            </li>
+            <li>
+                <description></description>
+                <id>0</id>
+                <p></p>
+            </li>
+            <li>
+                <description></description>
+                <id>0</id>
+                <p></p>
+            </li>
+        </ul>
+        <student_notes></student_notes>
+        <teacher_notes></teacher_notes>
+        <h1>What defines selections in situations 1  2?</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="convex" image_bg="/video/backgrounds/UI_session1_slide_1.png" template="NO_CONTENT" transition="slide">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes> Introduction to UI</teacher_notes>
+        <h1>EMPTY_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="convex" image_bg="none" template="ONLY_TITLE" transition="convex">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes>Explain its an everyday object. Ask them to give points related to the tv. What is the Purpose? How often do you use?etc</teacher_notes>
+        <h1>We see these every day...</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="/video/backgrounds/UI_session1_slide_3.png" template="NO_CONTENT" transition="none">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>Ask them questions about TV, how much do you use on a daily basis, what do you use it for</teacher_notes>
+        <h1>EMPTY_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="fade" image_bg="none" template="ONLY_TITLE_LIST" transition="concave">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul list_type="SIMPLE_LIST" merged_audio="">
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>   </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>What is the purpose of the TV?</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>   </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>What are the main components of the TV set?</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>   </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>What are the different actions you perform in a TV?</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>   </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>How do you interact to get the actions done?</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes> Ask the students the questions one by one. Let them come with the answers for each. Prompt to come up with more answers to each. </teacher_notes>
+        <h1>Think about these devices...</h1>
+        <h2></h2>
+    </slide>
+    <slide background="#ffffff" background_transition="zoom" image_bg="none" template="ONLY_LIST" transition="slide">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul list_type="SIMPLE_LIST" merged_audio="">
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>A TV is an telecommunication device for viewing and transmitting moving images (video) and sound</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Its components are the screen, the remote and internal components like tuner, picture tube, control board</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Actions include switching on/off, changing the channel, increasing or decreasing the volume</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Interactions are through remote controller or buttons on the TV set</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes> tn </teacher_notes>
+        <h1>NO_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="zoom" image_bg="none" template="ONLY_TITLE_IMAGE" transition="fade">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_6" url="/video/UI_session1_slide_6.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes> tn </teacher_notes>
+        <h1>What are actions and interactions?</h1>
+    </slide>
+
+    <slide background="#ffffff" background_transition="slide" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="none">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_8" url="/video/UI_session1_slide_8.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>The means by which the user interacts with an object to do/get what they want Eg: TV remote, TV Screen</p>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>Now we understand what an interface is. It is the medium by which the user interacts with the object to get what they want. Almost all objects have an interface. Take through other examples like door � whose interface are the handle, key etc. For a kettle, the interface is the spout, handle, buttons etc. Each object has an interface for the user to use it.</teacher_notes>
+        <h1>What is an interface?</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="zoom" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="zoom">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_9" url="/video/UI_session1_slide_9.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>This is an old generation phone before smartphones.
+        </p>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>This is an old generation phone before smartphones. </teacher_notes>
+        <h1>Let's step into the past...</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="convex" image_bg="none" template="ONLY_PARAGRAPH_IMAGE" transition="zoom">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_10" url="/video/UI_session1_slide_10.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>Let's try to understand the possible interaction for this phone
+        </p>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes>Discuss the actions and interactions in older cell phones. Emphasize calling/messaging functionality and highlight advantages and disadvantages of this phone. Activity to be conducted as an inclass discussion. Trainer to plan for 5 minutes for activity. </teacher_notes>
+        <h1>NO_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="zoom" image_bg="none" template="ONLY_TITLE_LIST" transition="zoom">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul list_type="SIMPLE_LIST" merged_audio="">
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>   </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Make voice calls</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>   </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Send messages</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>   </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Set remainders</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>What do we do with a mobile phone?</teacher_notes>
+        <h1>Actions for the phone:</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="zoom" image_bg="none" template="ONLY_TITLE_LIST" transition="convex">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul list_type="SIMPLE_LIST" merged_audio="">
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>To make a call, enter the number through the keypad</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Alternatively select the number from the contact list</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>To send a message, enter the message through the keypad or select contact and press send button to send</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes> How do we make a call? How do we send a message? more valid points to be added. </teacher_notes>
+        <h1>And for interactions on this phone:</h1>
+        <h2></h2>
+    </slide>
+    <slide background="#ffffff" background_transition="fade" image_bg="none" template="ONLY_TITLE_IMAGE" transition="zoom">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_13" url="/video/UI_session1_slide_13.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes>Hence interface are the parts by which we get those done. Buttons and the Screen help us interact with the mobile phone. </teacher_notes>
+        <h1>It has a simple interface...</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_IMAGE" transition="slide">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_14" url="/video/UI_session1_slide_14.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes> Now we move to an IT device and identify the interfaces ? mouse, keyboard, wires, plugs, screen, the OS. User interface is the part of the machine by which the user-computer hardware interaction happens. The OS is an user interface. As questions like, how do you start? How do you make it play music? How do you increase the volume. Discuss each of action, interaction, interface. Let the students come up with the answer. Prompt each time for answers. </teacher_notes>
+        <h1>Identify the actions, interactions and interfaces in a computer system</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="convex" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="convex">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_15" url="/video/UI_session1_slide_15.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>These are general answers. Make the students add more.
+        </p>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes> These are general answers. Make the students add more. Come up with generally there is a separate software interface for each interaction. Spend 5 to 7 mins on this discussion </teacher_notes>
+        <h1>Actions</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="convex" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="convex">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_16" url="/video/UI_session1_slide_16.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>-Hardware interfaces like keyboard, mouse  -User interface like the windows screen
+        </p>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes> tn </teacher_notes>
+        <h1> Interactions</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="zoom" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="convex">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_17" url="/video/UI_session1_slide_17.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>-Hardware interfaces like
+            keyboard, mouse -User interface like the
+            windows screen
+        </p>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>The students should be made to understand that UI in our course is the visual part of the system that is designed to help the user interact. </teacher_notes>
+        <h1>Interface</h1>
+    </slide>
+
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_IMAGE" transition="concave">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_19" url="/video/UI_session1_slide_19.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>Lets see the evolution of interfaces </teacher_notes>
+        <h1>Evolution of interfaces</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="convex">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_20" url="/video/UI_session1_slide_20.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>Earlier computer systems had black and white screens.
+        </p>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes> Earlier computer systems had black and white screens. Ask how many have used these interfaces. How easy was it to browse a directory or to edit a file? � Interaction was tough and time consuming </teacher_notes>
+        <h1>During the 1980's</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="fade" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="none">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_21" url="/video/UI_session1_slide_21.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>Better interfaces were developed.
+        </p>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes>Better interfaces were developed. More colors were added. Technology improved to cater to these needs. </teacher_notes>
+        <h1>During the 1990's</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="none">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_22" url="/video/UI_session1_slide_22.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>Better resolutions. Better performance
+        </p>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes>Better resolutions. Better performance. </teacher_notes>
+        <h1>During the 2000's</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="convex">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_23" url="/video/UI_session1_slide_23.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>Explosion of variety of devices. Best time to live in terms of the technology growth.
+        </p>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes> Explosion of variety of devices. Best time to live in terms of the technology growth. Everything is supplied in our finger tips. </teacher_notes>
+        <h1>During the 2010's</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="concave" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="concave">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_24" url="/video/UI_session1_slide_24.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>It is the interface which plays and important part in brining in more users.
+        </p>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes> tn It is the interface which plays and important part in brining in more users. People never have the time or patience to get things done. A wide variety of applications have developed to make life easier eg: Shopping is made easy, Booking tickets, Communication etc. Let the students add more. </teacher_notes>
+        <h1>Importance of UI</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="zoom" image_bg="none" template="ONLY_2TITLE" transition="convex">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>How important is it?</teacher_notes>
+        <h1>Is UI really Important?</h1>
+        <h2>Let's see!</h2>
+    </slide>
+    <slide background="#ffffff" background_transition="zoom" image_bg="/video/backgrounds/UI_session1_slide_26.png" template="NO_CONTENT" transition="none">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes> tn </teacher_notes>
+        <h1>EMPTY_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="slide">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_27" url="/video/UI_session1_slide_27.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>let the students discuss. They must point out what is the easiest to use.
+        </p>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>let the students discuss. They must point out what is the easiest to use. Draw the parallel �The coffee cup is the interface and coffee&amp; biscuit is the content� </teacher_notes>
+        <h1>A spot of tea anyone? </h1>
+    </slide>
+    <slide background="#ffffff" background_transition="slide" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="slide">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_28" url="/video/UI_session1_slide_28.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>Drive the students to validate their selection.
+        </p>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes> tn Drive the students to validate their selection. Expect arguments for option 2 and 3 </teacher_notes>
+        <h1>Is this better? Why? </h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_PARAGRAPH_IMAGE" transition="none">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_29" url="/video/UI_session1_slide_29.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <p>Expect arguments for option 2 and 3
+        </p>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>Drive the students to validate their selection. Expect arguments for option 2 and 3 </teacher_notes>
+        <h1>How's this for good design? </h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="/video/backgrounds/UI_session1_slide_30.png" template="NO_CONTENT" transition="none">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes> tn </teacher_notes>
+        <h1>EMPTY_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="fade" image_bg="/video/backgrounds/UI_session1_slide_31.png" template="NO_CONTENT" transition="concave">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes> tn </teacher_notes>
+        <h1>EMPTY_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="concave" image_bg="none" template="ONLY_TITLE_IMAGE" transition="zoom">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_32" url="/video/UI_session1_slide_32.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>Another example....Which is the correct design?</teacher_notes>
+        <h1>Bang! Bang!</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="concave" image_bg="none" template="ONLY_TITLE_IMAGE" transition="concave">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_33" url="/video/UI_session1_slide_33.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>Drive the students to validate their selection. Do they notice the flaw? They should understand that positioning of components is important.</teacher_notes>
+        <h1>Or is this better, cowboy?</h1>
+    </slide>
+
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_LIST" transition="convex">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul list_type="SIMPLE_LIST" merged_audio="">
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>     </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Serves the purpose best</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>     </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Ease of use</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>     </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Attractive or looks good</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes> Discuss the importance of each point </teacher_notes>
+        <h1>NO_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="concave" image_bg="none" template="ONLY_TITLE_IMAGE" transition="none">
+        <slide_audio></slide_audio>
+        <img title="UI_session1_slide_35" url="/video/UI_session1_slide_35.png">
+            <description></description>
+        </img>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>Ask how many use google and how often you use google.</teacher_notes>
+        <h1>Why would you use this more often compared to others?</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="slide" image_bg="/video/backgrounds/UI_session1_slide_36.png" template="NO_CONTENT" transition="slide">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul merged_audio="">
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description></description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes>Are you happy with the way google is? Do you expect any more features to it? Did you know? The founders of google didn�t know much of html. So they kept the design simple. It eventually proved to be a blessing in disguise. Even now, google products have very simple interface but densely packed functionalities. Eg: Gmail.</teacher_notes>
+        <h1>EMPTY_TITLE</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_LIST" transition="fade">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul list_type="SIMPLE_LIST" merged_audio="">
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Easy usage</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Clean and attractive</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Familiar and adherent to universal standards</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Consistent behaviour</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Responsive</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>       </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Tolerant to user errors</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes>sn </student_notes>
+        <teacher_notes>Explain each point with an example with some successful products like google, facebook, iphones etc</teacher_notes>
+        <h1>Features of a good UI</h1>
+    </slide>
+    <slide background="#ffffff" background_transition="none" image_bg="none" template="ONLY_TITLE_LIST" transition="fade">
+        <slide_audio></slide_audio>
+        <img url="http://images.all-free-download.com/images/graphicthumb/blank_note_document_4179.jpg"/>
+        <ul list_type="SIMPLE_LIST" merged_audio="">
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>NO_DESC</description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>    </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>What is an interface?</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>    </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>What is a user interface?</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>    </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Importance of a good interface</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description>    </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p>Features of good interfaces</p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+            <li>
+                <description> </description>
+                <fragment_audio></fragment_audio>
+                <id>0</id>
+                <p></p>
+                <fragment_duration>0</fragment_duration>
+            </li>
+        </ul>
+        <duration>0</duration>
+        <student_notes> sn </student_notes>
+        <teacher_notes>Check out if students have understood each of them.</teacher_notes>
+        <h1>Learning Outcomes</h1>
+    </slide>
+</presentation>
