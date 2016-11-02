@@ -31,7 +31,7 @@
             android:layout_height="match_parent"
             android:id="@+id/paragraph"
             android:fontFamily="sans-serif"
-            android:textSize="23sp"
+            android:textSize="20sp"
             android:text="What are the action and interaction"
             />
     </RelativeLayout>

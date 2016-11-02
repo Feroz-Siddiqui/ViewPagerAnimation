@@ -1,125 +1,125 @@
 <!--transate from right-->
 
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
-    android:fillAfter="true"
     android:duration="500"
+    android:fillAfter="true"
     android:fromYDelta="-100%"
-    android:toYDelta="0%"/>
+    android:toYDelta="0%" />
 
-<!--
-    <?xml version="1.0" encoding="utf-8"?>
-<alpha xmlns:android="http://schemas.android.com/apk/res/android"
-android:duration="300"
-android:fromAlpha="0.0"
-android:startOffset="1200"
-android:toAlpha="1.0" />
+    <!--
+        <?xml version="1.0" encoding="utf-8"?>
+    <alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:fromAlpha="0.0"
+    android:startOffset="1200"
+    android:toAlpha="1.0" />
 
-    hyperspace_out.xml
-    <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android"
-android:shareInterpolator="false" >
+        hyperspace_out.xml
+        <?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false" >
 
-<scale
-    android:duration="700"
-    android:fillAfter="false"
-    android:fillEnabled="true"
-    android:fromXScale="1.0"
-    android:fromYScale="1.0"
-    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
-    android:pivotX="50%"
-    android:pivotY="50%"
-    android:toXScale="1.4"
-    android:toYScale="0.6" />
-
-<set android:interpolator="@android:anim/accelerate_interpolator" >
     <scale
-        android:duration="400"
-        android:fillAfter="true"
-        android:fillBefore="false"
+        android:duration="700"
+        android:fillAfter="false"
         android:fillEnabled="true"
-        android:fromXScale="1.4"
-        android:fromYScale="0.6"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:startOffset="700"
-        android:toXScale="0.0"
-        android:toYScale="0.0" />
+        android:toXScale="1.4"
+        android:toYScale="0.6" />
 
-    <rotate
-        android:duration="400"
-        android:fillAfter="true"
-        android:fillBefore="false"
-        android:fillEnabled="true"
-        android:fromDegrees="0"
-        android:pivotX="50%"
-        android:pivotY="50%"
-        android:startOffset="700"
-        android:toDegrees="-45"
-        android:toYScale="0.0" />
-</set>
+    <set android:interpolator="@android:anim/accelerate_interpolator" >
+        <scale
+            android:duration="400"
+            android:fillAfter="true"
+            android:fillBefore="false"
+            android:fillEnabled="true"
+            android:fromXScale="1.4"
+            android:fromYScale="0.6"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:startOffset="700"
+            android:toXScale="0.0"
+            android:toYScale="0.0" />
 
-</set>
+        <rotate
+            android:duration="400"
+            android:fillAfter="true"
+            android:fillBefore="false"
+            android:fillEnabled="true"
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:startOffset="700"
+            android:toDegrees="-45"
+            android:toYScale="0.0" />
+    </set>
 
-    push_left_in.xml
-    <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    </set>
 
-<translate
-    android:duration="300"
-    android:fromXDelta="100%p"
-    android:toXDelta="0" />
+        push_left_in.xml
+        <?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
 
-<alpha
-    android:duration="300"
-    android:fromAlpha="0.0"
-    android:toAlpha="1.0" />
+    <translate
+        android:duration="300"
+        android:fromXDelta="100%p"
+        android:toXDelta="0" />
 
-</set>
+    <alpha
+        android:duration="300"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
 
-    push_left_out.xml
-    <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    </set>
 
-<translate
-    android:duration="300"
-    android:fromXDelta="0"
-    android:toXDelta="-100%p" />
+        push_left_out.xml
+        <?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
 
-<alpha
-    android:duration="300"
-    android:fromAlpha="1.0"
-    android:toAlpha="0.0" />
+    <translate
+        android:duration="300"
+        android:fromXDelta="0"
+        android:toXDelta="-100%p" />
 
-</set>
+    <alpha
+        android:duration="300"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
 
-    push_up_in.xml
-    <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    </set>
 
-<translate
-    android:duration="300"
-    android:fromYDelta="100%p"
-    android:toYDelta="0" />
+        push_up_in.xml
+        <?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
 
-<alpha
-    android:duration="300"
-    android:fromAlpha="0.0"
-    android:toAlpha="1.0" />
+    <translate
+        android:duration="300"
+        android:fromYDelta="100%p"
+        android:toYDelta="0" />
 
-</set>
+    <alpha
+        android:duration="300"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
 
-    push_up_out.xml
-    <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    </set>
 
-<translate
-    android:duration="300"
-    android:fromYDelta="0"
-    android:toYDelta="-100%p" />
+        push_up_out.xml
+        <?xml version="1.0" encoding="utf-8"?>
+    <set xmlns:android="http://schemas.android.com/apk/res/android" >
 
-<alpha
-    android:duration="300"
-    android:fromAlpha="1.0"
-    android:toAlpha="0.0" />
+    <translate
+        android:duration="300"
+        android:fromYDelta="0"
+        android:toYDelta="-100%p" />
 
-</set>-->
+    <alpha
+        android:duration="300"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+
+    </set>-->

@@ -14,12 +14,12 @@ public class Main2Activity extends AppCompatActivity {
     TextView textView;
     Spinner spinner;
 
-    //"enter_from_left", "enter_from_right", "exit_to_right", "floating_button_slide_up",
-    //"slide_down", "slide_right_in", "slide_up","fade_in","fade_out","blink","zoom_in"
-     //       ,"zoom_out","rotate",
+    //"
 
-    String[] animations = {"move","bounce","bounce_up","rotate_corner","rotate_center","hyperspace_in","hyperspace_out","push_left_in","push_left_out"
-    ,"push_up_in","push_up_out","sequential","together"};
+    String[] animations = {"enter_from_left", "enter_from_right", "exit_to_right", "floating_button_slide_up",
+            "slide_down", "slide_right_in", "slide_up", "fade_in", "fade_out", "blink", "zoom_in"
+            , "zoom_out", "rotate", "move", "bounce", "bounce_up", "rotate_corner", "rotate_center", "hyperspace_in", "hyperspace_out", "push_left_in", "push_left_out"
+            , "push_up_in", "push_up_out", "sequential", "together"};
     ArrayAdapter<String> animation_adapter;
 
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android" >
+<set xmlns:android="http://schemas.android.com/apk/res/android">
 
     <translate
         android:duration="300"
-        android:fromYDelta="0%p"
-        android:toYDelta="1421"
+        android:fillAfter="true"
         android:fromXDelta="0%p"
+        android:fromYDelta="0%p"
         android:toXDelta="907"
-        android:fillAfter="true" />
+        android:toYDelta="1421" />
 </set>
