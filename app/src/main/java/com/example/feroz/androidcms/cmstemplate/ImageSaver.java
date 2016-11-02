@@ -18,7 +18,7 @@ import java.io.IOException;
 
 public class ImageSaver {
 
-    private String directoryName = "images";
+    private String directoryName = "Talentify";
     private String fileName = "image.png";
     private Context context;
     private boolean external;
@@ -77,7 +77,7 @@ public class ImageSaver {
         File file = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES), albumName);
         if (!file.mkdirs()) {
-            Log.e("ImageSaver", "Directory not created  "+fileName);
+            Log.e("ImageSaver", "Directory Already exist"+fileName);
 
         }
         return file;
@@ -113,5 +113,10 @@ public class ImageSaver {
         return null;
     }
 
+
+    public boolean checkFile(){
+        File file = createFile();
+        return file.exists();
+    }
     public boolean deleteFile(){ File file = createFile(); return file.delete(); }
 }
