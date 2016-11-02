@@ -52,7 +52,7 @@ public class OnlyTitleImageFragment extends Fragment {
             }
         }
 
-        if(cmsSlide != null && cmsSlide.getTitle() != null ){
+        if (cmsSlide != null && cmsSlide.getTitle() != null) {
             title.setText(cmsSlide.getTitle());
         }
 
@@ -65,7 +65,7 @@ public class OnlyTitleImageFragment extends Fragment {
 
             public void onSwipeRight() {
                 System.out.println("right");
-                if(image.getVisibility() == View.VISIBLE) {
+                if (image.getVisibility() == View.VISIBLE) {
                     final Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.exit_to_left);
                     slide_down.setAnimationListener(new Animation.AnimationListener() {
@@ -76,7 +76,7 @@ public class OnlyTitleImageFragment extends Fragment {
 
                         @Override
                         public void onAnimationEnd(Animation animation) {
-                        image.setVisibility(View.GONE);
+                            image.setVisibility(View.GONE);
                         }
 
                         @Override
@@ -86,7 +86,7 @@ public class OnlyTitleImageFragment extends Fragment {
                     });
                     slide_down.setDuration(300);
                     image.startAnimation(slide_down);
-                }else {
+                } else {
                     MainActivity.previousViewpager();
                 }
             }
@@ -94,14 +94,14 @@ public class OnlyTitleImageFragment extends Fragment {
             public void onSwipeLeft() {
                 System.out.println("left");
 
-                if(image.getVisibility() == View.GONE){
-                 image.setVisibility(View.VISIBLE);
+                if (image.getVisibility() == View.GONE) {
+                    image.setVisibility(View.VISIBLE);
                     final Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.enter_from_left);
                     slide_down.setDuration(700);
                     image.startAnimation(slide_down);
 
-                }else {
+                } else {
 
                     MainActivity.nextViewpager();
                 }
@@ -122,7 +122,7 @@ public class OnlyTitleImageFragment extends Fragment {
 
     void imageUtility(CMSSlide cmsSlide, Context context, ImageView image, Picasso mPicasso) {
         image.setVisibility(View.GONE);
-        if (cmsSlide != null && cmsSlide.getImage() != null && cmsSlide.getImage().getUrl()!=null) {
+        if (cmsSlide != null && cmsSlide.getImage() != null && cmsSlide.getImage().getUrl() != null) {
             int index = cmsSlide.getImage().getUrl().lastIndexOf("/");
             String bg_image_name = cmsSlide.getImage().getUrl().substring(index, cmsSlide.getImage().getUrl().length()).replace("/", "");
             System.out.println("bg_image_name bg_image_name bg_image_name:::: " + bg_image_name);
@@ -136,7 +136,7 @@ public class OnlyTitleImageFragment extends Fragment {
                     setFileName(bg_image_name).
                     setExternal(externalReadable).
                     checkFile();
-            System.out.println("External storage : "+externalReadable+"\nfile_exist :" + file_exist);
+            System.out.println("External storage : " + externalReadable + "\nfile_exist :" + file_exist);
 
             if (file_exist) {
                 Bitmap bitmap = new ImageSaver(context).
@@ -145,7 +145,7 @@ public class OnlyTitleImageFragment extends Fragment {
                         load();
                 image.setImageBitmap(bitmap);
             } else {
-                mPicasso.load("http://api.talentify.in"+cmsSlide.getImage().getUrl()).into(image);
+                mPicasso.load("http://api.talentify.in" + cmsSlide.getImage().getUrl()).into(image);
 
                 StrictMode.ThreadPolicy policy =
                         new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -154,7 +154,7 @@ public class OnlyTitleImageFragment extends Fragment {
                 Bitmap bitmap = null;
 
                 try {
-                    URL url = new URL("http://api.talentify.in"+cmsSlide.getImage().getUrl());
+                    URL url = new URL("http://api.talentify.in" + cmsSlide.getImage().getUrl());
                     bitmap = BitmapFactory.decodeStream(url.openConnection().getInputStream());
                 } catch (IOException e) {
                     System.out.println(e);
