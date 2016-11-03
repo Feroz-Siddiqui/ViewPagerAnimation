@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.feroz.androidcms.viewPagerUtility.OnSwipeTouchListener;
+import com.example.feroz.androidcms.viewPagerutility.OnSwipeTouchListener;
 
 /**
  * Created by Feroz on 21-10-2016.

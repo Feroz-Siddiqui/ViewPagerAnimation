@@ -16,8 +16,8 @@ import android.widget.LinearLayout;
 import com.example.feroz.androidcms.MainActivity;
 import com.example.feroz.androidcms.R;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
-import com.example.feroz.androidcms.mediaUtility.ImageSaver;
-import com.example.feroz.androidcms.viewPagerUtility.OnSwipeTouchListener;
+import com.example.feroz.androidcms.mediautility.ImageSaver;
+import com.example.feroz.androidcms.viewPagerutility.OnSwipeTouchListener;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;

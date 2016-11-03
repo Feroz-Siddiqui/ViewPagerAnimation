@@ -1,4 +1,4 @@
-package com.example.feroz.androidcms.mediaUtility;
+package com.example.feroz.androidcms.mediautility;
 
 import android.content.Context;
 import android.os.Environment;

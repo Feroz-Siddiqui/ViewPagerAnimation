@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -19,9 +20,10 @@ import android.widget.TextView;
 import com.example.feroz.androidcms.MainActivity;
 import com.example.feroz.androidcms.R;
 import com.example.feroz.androidcms.animation.AnimateLayoutUtility;
+import com.example.feroz.androidcms.animation.ExitAnimationUtility;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
-import com.example.feroz.androidcms.mediaUtility.ImageSaver;
-import com.example.feroz.androidcms.viewPagerUtility.OnSwipeTouchListener;
+import com.example.feroz.androidcms.mediautility.ImageSaver;
+import com.example.feroz.androidcms.viewPagerutility.OnSwipeTouchListener;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -58,9 +60,10 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
         main_layout = (LinearLayout) view.findViewById(R.id.main_layout);
         paragraph = (TextView) view.findViewById(R.id.paragraph);
         mPicasso = Picasso.with(getContext()); //Single instance
-
+        title.setVisibility(View.GONE);
         if(!flag) {
             paragraph.setVisibility(View.GONE);
+
         }
         if (getArguments() != null) {
             if (getArguments().getSerializable("CMSSLIDE") != null) {
@@ -74,10 +77,12 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
         }
 
 
-        imageUtility(cmsSlide, getContext(), image, mPicasso);
         if(flag) {
-            image.setVisibility(View.VISIBLE);
+            title.setVisibility(View.VISIBLE);
         }
+        imageUtility(cmsSlide, getContext(), image, mPicasso);
+
+
 
         if (cmsSlide != null && cmsSlide.getParagraph() != null) {
             paragraph.setText(cmsSlide.getParagraph());
@@ -90,28 +95,7 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
 
             public void onSwipeRight() {
                 System.out.println("right");
-                if (image.getVisibility() == View.VISIBLE) {
-                    final Animation slide_down = AnimationUtils.loadAnimation(getContext(),
-                            R.anim.exit_to_left);
-                    slide_down.setAnimationListener(new Animation.AnimationListener() {
-                        @Override
-                        public void onAnimationStart(Animation animation) {
-
-                        }
-
-                        @Override
-                        public void onAnimationEnd(Animation animation) {
-                            image.setVisibility(View.GONE);
-                        }
-
-                        @Override
-                        public void onAnimationRepeat(Animation animation) {
-
-                        }
-                    });
-                    slide_down.setDuration(300);
-                    image.startAnimation(slide_down);
-                } else if (paragraph.getVisibility() == View.VISIBLE) {
+                if (paragraph.getVisibility() == View.VISIBLE) {
                     final Animation enter_from_right = AnimationUtils.loadAnimation(getContext(),
                             R.anim.exit_to_right);
                     enter_from_right.setDuration(700);
@@ -133,6 +117,11 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
                     });
                     paragraph.startAnimation(enter_from_right);
 
+                }
+                 else if (title.getVisibility() == View.VISIBLE) {
+
+                    title.startAnimation(new ExitAnimationUtility().getAnimation(500,0,getContext()));
+                    title.setVisibility(View.GONE);
                 } else {
                     MainActivity.previousViewpager();
                 }
@@ -141,16 +130,16 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
             public void onSwipeLeft() {
                 System.out.println("left");
 
-                if (paragraph.getVisibility() == View.GONE) {
+                if (title.getVisibility() == View.GONE) {
+                    title.setVisibility(View.VISIBLE);
+                    title.startAnimation(new AnimateLayoutUtility().getAnimation(700,10,getContext()));
+
+                }  else if (paragraph.getVisibility() == View.GONE) {
                     paragraph.setVisibility(View.VISIBLE);
                     final Animation enter_from_right = AnimationUtils.loadAnimation(getContext(),
                             R.anim.enter_from_right);
                     enter_from_right.setDuration(700);
                     paragraph.startAnimation(enter_from_right);
-
-                } else if (image.getVisibility() == View.GONE) {
-                    image.setVisibility(View.VISIBLE);
-                    image.startAnimation(new AnimateLayoutUtility().getAnimation(700,10,getContext()));
 
                 } else {
 
@@ -168,11 +157,17 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
             }
         });
 
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                image.setAnimation(null);
+            }
+        }, 6000);
+
         return view;
     }
 
     void imageUtility(CMSSlide cmsSlide, Context context, ImageView image, Picasso mPicasso) {
-        image.setVisibility(View.GONE);
         Bitmap bitmap;
         if (cmsSlide != null && cmsSlide.getImage() != null && cmsSlide.getImage().getUrl() != null) {
             int index = cmsSlide.getImage().getUrl().lastIndexOf("/");
@@ -219,7 +214,17 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
                             save(bitmap);
                     bitmap.recycle();
                 }
-            }/*
+            }
+
+            Animation anim =new AnimateLayoutUtility().getAnimation(6000,12,getContext());
+
+            anim.setRepeatCount(Animation.INFINITE);
+
+
+
+
+            image.startAnimation(anim);
+            /*
             if (bitmap != null && !bitmap.isRecycled()) {
                 bitmap.recycle();
                 bitmap = null;

@@ -16,8 +16,8 @@ import android.view.animation.Interpolator;
 import com.eftimoff.viewpagertransformers.DefaultTransformer;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
 import com.example.feroz.androidcms.cmsslide.Presentation;
-import com.example.feroz.androidcms.viewPagerUtility.FixedSpeedScroller;
-import com.example.feroz.androidcms.viewPagerUtility.LockableViewPager;
+import com.example.feroz.androidcms.viewPagerutility.FixedSpeedScroller;
+import com.example.feroz.androidcms.viewPagerutility.LockableViewPager;
 
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(),cmsSlides);
         viewPager.setAdapter(viewPagerAdapter);
-        viewPager.setCurrentItem(0);
+        viewPager.setCurrentItem(5);
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {

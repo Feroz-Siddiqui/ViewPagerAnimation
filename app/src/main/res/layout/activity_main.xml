@@ -7,7 +7,7 @@
 
     tools:context="com.example.feroz.androidcms.MainActivity">
 
-    <com.example.feroz.androidcms.viewPagerUtility.LockableViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.example.feroz.androidcms.viewPagerutility.LockableViewPager xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/viewPager1234"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
