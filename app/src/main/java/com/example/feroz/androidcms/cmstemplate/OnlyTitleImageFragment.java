@@ -18,7 +18,10 @@ import android.widget.TextView;
 
 import com.example.feroz.androidcms.MainActivity;
 import com.example.feroz.androidcms.R;
+import com.example.feroz.androidcms.animation.AnimateLayoutUtility;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
+import com.example.feroz.androidcms.mediaUtility.ImageSaver;
+import com.example.feroz.androidcms.viewPagerUtility.OnSwipeTouchListener;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -35,6 +38,19 @@ public class OnlyTitleImageFragment extends Fragment {
     private Picasso mPicasso;
     private CMSSlide cmsSlide;
     private LinearLayout main_layout;
+    private boolean flag;
+    @Override
+    public   void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (savedInstanceState != null) {
+            flag =true;
+            System.out.println("savedInstanceState savedInstanceState savedInstanceState");
+        }else{
+            System.out.println("unsavedInstanceState unsavedInstanceState unsavedInstanceState");
+            flag = false;
+        }
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -58,6 +74,9 @@ public class OnlyTitleImageFragment extends Fragment {
 
         imageUtility(cmsSlide, getContext(), image, mPicasso);
 
+        if(flag)
+            image.setVisibility(View.VISIBLE);
+
         main_layout.setOnTouchListener(new OnSwipeTouchListener(getContext()) {
             public void onSwipeTop() {
                 System.out.println("top");
@@ -65,6 +84,7 @@ public class OnlyTitleImageFragment extends Fragment {
 
             public void onSwipeRight() {
                 System.out.println("right");
+
                 if (image.getVisibility() == View.VISIBLE) {
                     final Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.exit_to_left);
@@ -96,11 +116,7 @@ public class OnlyTitleImageFragment extends Fragment {
 
                 if (image.getVisibility() == View.GONE) {
                     image.setVisibility(View.VISIBLE);
-                    final Animation slide_down = AnimationUtils.loadAnimation(getContext(),
-                            R.anim.enter_from_left);
-                    slide_down.setDuration(700);
-                    image.startAnimation(slide_down);
-
+                    image.startAnimation(new AnimateLayoutUtility().getAnimation(700,14,getContext()));
                 } else {
 
                     MainActivity.nextViewpager();
@@ -122,6 +138,7 @@ public class OnlyTitleImageFragment extends Fragment {
 
     void imageUtility(CMSSlide cmsSlide, Context context, ImageView image, Picasso mPicasso) {
         image.setVisibility(View.GONE);
+        Bitmap bitmap;
         if (cmsSlide != null && cmsSlide.getImage() != null && cmsSlide.getImage().getUrl() != null) {
             int index = cmsSlide.getImage().getUrl().lastIndexOf("/");
             String bg_image_name = cmsSlide.getImage().getUrl().substring(index, cmsSlide.getImage().getUrl().length()).replace("/", "");
@@ -139,7 +156,7 @@ public class OnlyTitleImageFragment extends Fragment {
             System.out.println("External storage : " + externalReadable + "\nfile_exist :" + file_exist);
 
             if (file_exist) {
-                Bitmap bitmap = new ImageSaver(context).
+                bitmap = new ImageSaver(context).
                         setFileName(bg_image_name).
                         setExternal(externalReadable).
                         load();
@@ -151,7 +168,7 @@ public class OnlyTitleImageFragment extends Fragment {
                         new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);
 
-                Bitmap bitmap = null;
+                bitmap = null;
 
                 try {
                     URL url = new URL("http://api.talentify.in" + cmsSlide.getImage().getUrl());
@@ -165,8 +182,13 @@ public class OnlyTitleImageFragment extends Fragment {
                             setFileName(bg_image_name).
                             setExternal(externalWritable).
                             save(bitmap);
+                    bitmap.recycle();
                 }
             }
+           /* if (bitmap != null && !bitmap.isRecycled()) {
+                bitmap.recycle();
+                bitmap = null;
+            }*/
 
         }
     }

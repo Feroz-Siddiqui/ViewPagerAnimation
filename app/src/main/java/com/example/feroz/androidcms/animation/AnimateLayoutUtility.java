@@ -1,4 +1,4 @@
-package com.example.feroz.androidcms.cmstemplate;
+package com.example.feroz.androidcms.animation;
 
 import android.content.Context;
 import android.view.animation.Animation;
@@ -14,7 +14,6 @@ import java.util.Random;
 
 public class AnimateLayoutUtility {
     public Context context;
-    public Boolean randomAnimation;
 
     public AnimateLayoutUtility() {
     }
@@ -40,6 +39,7 @@ public class AnimateLayoutUtility {
         int Low = 1;
         int High = 26;
         int result = r.nextInt(High-Low) + Low;
+        System.out.println("------------------> result "+result);
         return result;
     }
     private Integer createRandomAnimationResource(Integer specificAnimationNumber) {

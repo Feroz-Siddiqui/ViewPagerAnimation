@@ -16,6 +16,8 @@ import android.widget.TextView;
 import com.example.feroz.androidcms.MainActivity;
 import com.example.feroz.androidcms.R;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
+import com.example.feroz.androidcms.mediaUtility.ImageSaver;
+import com.example.feroz.androidcms.viewPagerUtility.OnSwipeTouchListener;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -82,7 +84,7 @@ public class OnlyTitleFragment extends Fragment {
     }
 
     void imageUtility(CMSSlide cmsSlide, Context context, CustomLayout main_layout, Picasso mPicasso) {
-
+        Bitmap bitmap;
         if (cmsSlide != null && cmsSlide.getImage().getUrl() != null) {
             int index = cmsSlide.getImage().getUrl().lastIndexOf("/");
             String bg_image_name = cmsSlide.getImage().getUrl().substring(index, cmsSlide.getImage().getUrl().length()).replace("/", "");
@@ -97,10 +99,10 @@ public class OnlyTitleFragment extends Fragment {
                     setFileName(bg_image_name).
                     setExternal(externalReadable).
                     checkFile();
-            System.out.println("External storage : "+externalReadable+"\nfile_exist :" + file_exist);
+            System.out.println("External storage : " + externalReadable + "\nfile_exist :" + file_exist);
 
             if (file_exist) {
-                Bitmap bitmap = new ImageSaver(context).
+                bitmap = new ImageSaver(context).
                         setFileName(bg_image_name).
                         setExternal(externalReadable).
                         load();
@@ -113,7 +115,7 @@ public class OnlyTitleFragment extends Fragment {
                         new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);
 
-                Bitmap bitmap = null;
+                bitmap = null;
 
                 try {
                     URL url = new URL(this.cmsSlide.getImage().getUrl());
@@ -127,9 +129,14 @@ public class OnlyTitleFragment extends Fragment {
                             setFileName(bg_image_name).
                             setExternal(externalWritable).
                             save(bitmap);
+                    bitmap.recycle();
                 }
             }
 
+            /*if (bitmap != null && !bitmap.isRecycled()) {
+                bitmap.recycle();
+                bitmap = null;
+            }*/
         }
     }
 

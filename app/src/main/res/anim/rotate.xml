@@ -6,7 +6,6 @@
         android:interpolator="@android:anim/cycle_interpolator"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:repeatCount="1"
         android:toDegrees="360" />
 
 </set>

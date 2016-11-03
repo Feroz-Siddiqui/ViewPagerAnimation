@@ -1,4 +1,4 @@
-package com.example.feroz.androidcms.cmstemplate;
+package com.example.feroz.androidcms.viewPagerUtility;
 
 import android.content.Context;
 import android.view.animation.Interpolator;

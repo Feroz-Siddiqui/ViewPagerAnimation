@@ -40,7 +40,7 @@
                 android:textSize="18sp"
 
                 android:layout_below="@+id/list_item_text_1"
-                android:text="hekkkkkk jjjjjjekkkkk jjjekkjje kk"
+                android:text=""
                 android:layout_marginBottom="15dp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                 android:textSize="18sp"
 
                 android:layout_below="@+id/list_item_text_2"
-                android:text="hekkkkkk jjjjjjekkkkk jjjekkjje kk"
+                android:text=""
                 android:layout_marginBottom="15dp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                 android:textSize="18sp"
 
                 android:layout_below="@+id/list_item_text_3"
-                android:text="hekkkkkk jjjjjjekkkkk jjjekkjje kk"
+                android:text=""
                 android:layout_marginBottom="15dp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -70,7 +70,7 @@
                 android:textSize="18sp"
 
                 android:layout_below="@+id/list_item_text_4"
-                android:text="hekkkkkk jjjjjjekkkkk jjjekkjje kk"
+                android:text=""
                 android:layout_marginBottom="15dp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -79,7 +79,7 @@
                 android:fontFamily="sans-serif"
                 android:textSize="18sp"
                 android:layout_below="@+id/list_item_text_5"
-                android:text="hekkkkkk jjjjjjekkkkk jjjekkjje kk"
+                android:text=""
                 android:layout_marginBottom="15dp"/>
         </RelativeLayout>
     </com.example.feroz.androidcms.cmstemplate.CustomLayout>

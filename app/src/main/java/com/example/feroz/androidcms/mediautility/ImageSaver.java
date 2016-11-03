@@ -1,4 +1,4 @@
-package com.example.feroz.androidcms.cmstemplate;
+package com.example.feroz.androidcms.mediaUtility;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -63,10 +63,9 @@ public class ImageSaver {
     @NonNull
     private File createFile() {
         File directory;
-        if(external){
+        if (external) {
             directory = getAlbumStorageDir(directoryName);
-        }
-        else {
+        } else {
             directory = context.getDir(directoryName, Context.MODE_PRIVATE);
         }
 
@@ -77,7 +76,7 @@ public class ImageSaver {
         File file = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES), albumName);
         if (!file.mkdirs()) {
-            Log.e("ImageSaver", "Directory Already exist"+fileName);
+            Log.e("ImageSaver", "Directory Already exist" + fileName);
 
         }
         return file;
@@ -95,11 +94,21 @@ public class ImageSaver {
     }
 
     public Bitmap load() {
+        Bitmap bitmap = null;
+
         FileInputStream inputStream = null;
         try {
             inputStream = new FileInputStream(createFile());
-            return BitmapFactory.decodeStream(inputStream);
-        } catch (Exception e) {
+            bitmap = BitmapFactory.decodeStream(inputStream);
+
+        }catch (OutOfMemoryError oom) {
+            System.gc();
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inPreferredConfig = Bitmap.Config.RGB_565;
+            bitmap = BitmapFactory.decodeStream(inputStream,null,options);
+
+        }
+        catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
@@ -110,13 +119,17 @@ public class ImageSaver {
                 e.printStackTrace();
             }
         }
-        return null;
+        return bitmap;
     }
 
 
-    public boolean checkFile(){
+    public boolean checkFile() {
         File file = createFile();
         return file.exists();
     }
-    public boolean deleteFile(){ File file = createFile(); return file.delete(); }
+
+    public boolean deleteFile() {
+        File file = createFile();
+        return file.delete();
+    }
 }

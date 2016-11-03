@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.view.ViewGroup;
 
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
 import com.example.feroz.androidcms.cmstemplate.NoContentFragment;
@@ -77,8 +76,10 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public Parcelable saveState() {
         return null;
     }
-    @Override
+    /*@Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         // TODO Auto-generated method stub
-    }
+
+
+    }*/
 }

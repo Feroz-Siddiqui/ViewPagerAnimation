@@ -18,7 +18,10 @@ import android.widget.TextView;
 
 import com.example.feroz.androidcms.MainActivity;
 import com.example.feroz.androidcms.R;
+import com.example.feroz.androidcms.animation.AnimateLayoutUtility;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
+import com.example.feroz.androidcms.mediaUtility.ImageSaver;
+import com.example.feroz.androidcms.viewPagerUtility.OnSwipeTouchListener;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -35,17 +38,30 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
     private Picasso mPicasso;
     private CMSSlide cmsSlide;
     private LinearLayout main_layout;
-
+    private boolean flag;
+    @Override
+    public   void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (savedInstanceState != null) {
+            flag =true;
+        }else{
+            flag = false;
+        }
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.only_title_paragraph_image, container, false);
+
         title = (TextView) view.findViewById(R.id.title);
         image = (ImageView) view.findViewById(R.id.image);
         main_layout = (LinearLayout) view.findViewById(R.id.main_layout);
         paragraph = (TextView) view.findViewById(R.id.paragraph);
         mPicasso = Picasso.with(getContext()); //Single instance
-        paragraph.setVisibility(View.GONE);
+
+        if(!flag) {
+            paragraph.setVisibility(View.GONE);
+        }
         if (getArguments() != null) {
             if (getArguments().getSerializable("CMSSLIDE") != null) {
                 cmsSlide = (CMSSlide) getArguments().getSerializable("CMSSLIDE");
@@ -56,23 +72,12 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
         if (cmsSlide != null && cmsSlide.getTitle() != null) {
             title.setText(cmsSlide.getTitle());
         }
-        /*if(cmsSlide != null && cmsSlide.getImage().getUrl() != null){
 
-            mPicasso.load("http://api.talentify.in"+cmsSlide.getImage().getUrl()).into(image, new com.squareup.picasso.Callback() {
-                @Override
-                public void onSuccess() {
-                    image.setVisibility(View.GONE);
-                }
-
-                @Override
-                public void onError() {
-
-                }
-            });
-        }*/
 
         imageUtility(cmsSlide, getContext(), image, mPicasso);
-
+        if(flag) {
+            image.setVisibility(View.VISIBLE);
+        }
 
         if (cmsSlide != null && cmsSlide.getParagraph() != null) {
             paragraph.setText(cmsSlide.getParagraph());
@@ -145,10 +150,7 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
 
                 } else if (image.getVisibility() == View.GONE) {
                     image.setVisibility(View.VISIBLE);
-                    final Animation slide_down = AnimationUtils.loadAnimation(getContext(),
-                            R.anim.enter_from_left);
-                    slide_down.setDuration(700);
-                    image.startAnimation(slide_down);
+                    image.startAnimation(new AnimateLayoutUtility().getAnimation(700,10,getContext()));
 
                 } else {
 
@@ -171,6 +173,7 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
 
     void imageUtility(CMSSlide cmsSlide, Context context, ImageView image, Picasso mPicasso) {
         image.setVisibility(View.GONE);
+        Bitmap bitmap;
         if (cmsSlide != null && cmsSlide.getImage() != null && cmsSlide.getImage().getUrl() != null) {
             int index = cmsSlide.getImage().getUrl().lastIndexOf("/");
             String bg_image_name = cmsSlide.getImage().getUrl().substring(index, cmsSlide.getImage().getUrl().length()).replace("/", "");
@@ -188,7 +191,7 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
             System.out.println("External storage : " + externalReadable + "\nfile_exist :" + file_exist);
 
             if (file_exist) {
-                Bitmap bitmap = new ImageSaver(context).
+                bitmap = new ImageSaver(context).
                         setFileName(bg_image_name).
                         setExternal(externalReadable).
                         load();
@@ -200,7 +203,7 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
                         new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);
 
-                Bitmap bitmap = null;
+               bitmap = null;
 
                 try {
                     URL url = new URL("http://api.talentify.in" + cmsSlide.getImage().getUrl());
@@ -214,9 +217,13 @@ public class OnlyTitleParagraphImageFragment extends Fragment {
                             setFileName(bg_image_name).
                             setExternal(externalWritable).
                             save(bitmap);
+                    bitmap.recycle();
                 }
-            }
-
+            }/*
+            if (bitmap != null && !bitmap.isRecycled()) {
+                bitmap.recycle();
+                bitmap = null;
+            }*/
         }
     }
 }

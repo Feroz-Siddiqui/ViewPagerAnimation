@@ -8,13 +8,17 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.feroz.androidcms.MainActivity;
 import com.example.feroz.androidcms.R;
+import com.example.feroz.androidcms.animation.EntryAnimationUtility;
+import com.example.feroz.androidcms.animation.ExitAnimationUtility;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
 import com.example.feroz.androidcms.cmsslide.CMSTextItem;
+import com.example.feroz.androidcms.viewPagerUtility.OnSwipeTouchListener;
 import com.squareup.picasso.Picasso;
 
 
@@ -27,8 +31,19 @@ public class OnlyTitleListFragment extends Fragment {
     private CMSSlide cmsSlide;
     private ImageView imageView;
     private CustomLayout main_layout;
-    private TextView list_item_text_1,list_item_text_2,list_item_text_3,list_item_text_4,list_item_text_5,list_item_text_6,title;
-    static int i=0;
+    private TextView list_item_text_1, list_item_text_2, list_item_text_3, list_item_text_4, list_item_text_5, list_item_text_6, title;
+    int i = 0;
+    private boolean flag;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (savedInstanceState != null) {
+            flag = true;
+        } else {
+            flag = false;
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -43,14 +58,16 @@ public class OnlyTitleListFragment extends Fragment {
         list_item_text_5 = (TextView) view.findViewById(R.id.list_item_text_5);
         list_item_text_6 = (TextView) view.findViewById(R.id.list_item_text_6);
         title = (TextView) view.findViewById(R.id.title);
-        i=0;
-        list_item_text_1.setVisibility(View.GONE);
-        list_item_text_2.setVisibility(View.GONE);
-        list_item_text_3.setVisibility(View.GONE);
-        list_item_text_4.setVisibility(View.GONE);
-        list_item_text_5.setVisibility(View.GONE);
-        list_item_text_6.setVisibility(View.GONE);
+        i = 0;
 
+        if (!flag) {
+            list_item_text_1.setVisibility(View.GONE);
+            list_item_text_2.setVisibility(View.GONE);
+            list_item_text_3.setVisibility(View.GONE);
+            list_item_text_4.setVisibility(View.GONE);
+            list_item_text_5.setVisibility(View.GONE);
+            list_item_text_6.setVisibility(View.GONE);
+        }
         if (getArguments() != null) {
             if (getArguments().getSerializable("CMSSLIDE") != null) {
                 cmsSlide = (CMSSlide) getArguments().getSerializable("CMSSLIDE");
@@ -58,22 +75,22 @@ public class OnlyTitleListFragment extends Fragment {
             }
         }
 
-        if(cmsSlide != null && cmsSlide.getTitle() != null){
+        if (cmsSlide != null && cmsSlide.getTitle() != null) {
             title.setText(cmsSlide.getTitle());
         }
 
-        if(cmsSlide != null && cmsSlide.getList() != null && cmsSlide.getList().getItems() != null  ) {
-            for(CMSTextItem cmsTextItem:cmsSlide.getList().getItems()){
-                if(cmsTextItem.getText() != null){
+        if (cmsSlide != null && cmsSlide.getList() != null && cmsSlide.getList().getItems() != null) {
+            for (CMSTextItem cmsTextItem : cmsSlide.getList().getItems()) {
+                if (cmsTextItem.getText() != null) {
                     i++;
 
-                    fillData(cmsTextItem.getText(),i);
+                    fillData(cmsTextItem.getText(), i);
                 }
             }
-            System.out.println("count is is "+i);
+            System.out.println("count is is " + i);
 
 
-        }else{
+        } else {
 
 
         }
@@ -85,22 +102,22 @@ public class OnlyTitleListFragment extends Fragment {
 
             public void onSwipeRight() {
                 System.out.println("right");
-
-                if(i !=0){
+                if (i != 0) {
                     checkRightSwipingListItem(i);
-                }else {
+                } else {
                     MainActivity.previousViewpager();
                 }
+
             }
 
             public void onSwipeLeft() {
                 System.out.println("left");
 
-                if(i !=0){
+                if (i != 0) {
                     checkLeftSwipingListItem(i);
 
 
-                }else{
+                } else {
                     MainActivity.nextViewpager();
 
                 }
@@ -120,27 +137,26 @@ public class OnlyTitleListFragment extends Fragment {
     }
 
 
-
     private void fillData(String text, int i) {
 
         SpannableString spannable = new SpannableString(text);
         spannable.setSpan(new BulletSpan(16), 0, text.length(), 0);
 
-        if(i ==1){
+        if (i == 1) {
             list_item_text_1.setText(spannable);
-        }else if(i==2){
+        } else if (i == 2) {
             list_item_text_2.setText(spannable);
 
-        }else if(i==3){
+        } else if (i == 3) {
             list_item_text_3.setText(spannable);
 
-        }else if(i==4){
+        } else if (i == 4) {
             list_item_text_4.setText(spannable);
 
-        }else if(i==5){
+        } else if (i == 5) {
             list_item_text_5.setText(spannable);
 
-        }else {
+        } else {
             list_item_text_6.setText(spannable);
 
         }
@@ -148,155 +164,195 @@ public class OnlyTitleListFragment extends Fragment {
 
 
     private void checkLeftSwipingListItem(int i) {
-        if(i==1){
-            if(list_item_text_1.getVisibility() == View.GONE){
-                list_item_text_1.setVisibility(View.VISIBLE);
-            }else{
+        if (i == 1) {
+            if (list_item_text_1.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_1);
+            } else {
                 MainActivity.nextViewpager();
             }
-        }else if( i==2){
-            if(list_item_text_1.getVisibility() == View.GONE){
-                list_item_text_1.setVisibility(View.VISIBLE);
-            }else if(list_item_text_2.getVisibility() == View.GONE){
-                list_item_text_2.setVisibility(View.VISIBLE);
-            }else{
+        } else if (i == 2) {
+            if (list_item_text_1.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_1);
+            } else if (list_item_text_2.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_2);
+            } else {
                 MainActivity.nextViewpager();
             }
-        }else if( i==3){
-            if(list_item_text_1.getVisibility() == View.GONE){
-                list_item_text_1.setVisibility(View.VISIBLE);
-            }else if(list_item_text_2.getVisibility() == View.GONE){
-                list_item_text_2.setVisibility(View.VISIBLE);
-            }else if(list_item_text_3.getVisibility() == View.GONE){
-                list_item_text_3.setVisibility(View.VISIBLE);
-            }else{
+        } else if (i == 3) {
+            if (list_item_text_1.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_1);
+            } else if (list_item_text_2.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_2);
+            } else if (list_item_text_3.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_3);
+            } else {
                 MainActivity.nextViewpager();
             }
-        }else if( i==4){
-            if(list_item_text_1.getVisibility() == View.GONE){
-                list_item_text_1.setVisibility(View.VISIBLE);
-            }else if(list_item_text_2.getVisibility() == View.GONE){
-                list_item_text_2.setVisibility(View.VISIBLE);
-            }else if(list_item_text_3.getVisibility() == View.GONE){
-                list_item_text_3.setVisibility(View.VISIBLE);
-            }else if(list_item_text_4.getVisibility() == View.GONE){
-                list_item_text_4.setVisibility(View.VISIBLE);
-            }else{
+        } else if (i == 4) {
+            if (list_item_text_1.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_1);
+            } else if (list_item_text_2.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_2);
+            } else if (list_item_text_3.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_3);
+            } else if (list_item_text_4.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_4);
+            } else {
                 MainActivity.nextViewpager();
             }
-        }else if( i==5){
-            if(list_item_text_1.getVisibility() == View.GONE){
-                list_item_text_1.setVisibility(View.VISIBLE);
-            }else if(list_item_text_2.getVisibility() == View.GONE){
-                list_item_text_2.setVisibility(View.VISIBLE);
-            }else if(list_item_text_3.getVisibility() == View.GONE){
-                list_item_text_3.setVisibility(View.VISIBLE);
-            }else if(list_item_text_4.getVisibility() == View.GONE){
-                list_item_text_4.setVisibility(View.VISIBLE);
-            }else if(list_item_text_5.getVisibility() == View.GONE){
-                list_item_text_5.setVisibility(View.VISIBLE);
-            }
-            else{
+        } else if (i == 5) {
+            if (list_item_text_1.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_1);
+            } else if (list_item_text_2.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_2);
+            } else if (list_item_text_3.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_3);
+            } else if (list_item_text_4.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_4);
+            } else if (list_item_text_5.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_5);
+            } else {
                 MainActivity.nextViewpager();
             }
-        }else {
-            if(list_item_text_1.getVisibility() == View.GONE){
-                list_item_text_1.setVisibility(View.VISIBLE);
-            }else if(list_item_text_2.getVisibility() == View.GONE){
-                list_item_text_2.setVisibility(View.VISIBLE);
-            }else if(list_item_text_3.getVisibility() == View.GONE){
-                list_item_text_3.setVisibility(View.VISIBLE);
-            }else if(list_item_text_4.getVisibility() == View.GONE){
-                list_item_text_4.setVisibility(View.VISIBLE);
-            }else if(list_item_text_5.getVisibility() == View.GONE){
-                list_item_text_5.setVisibility(View.VISIBLE);
-            }else if(list_item_text_6.getVisibility() == View.GONE){
-                list_item_text_6.setVisibility(View.VISIBLE);
-            }
-            else{
+        } else {
+            if (list_item_text_1.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_1);
+            } else if (list_item_text_2.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_2);
+            } else if (list_item_text_3.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_3);
+            } else if (list_item_text_4.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_4);
+            } else if (list_item_text_5.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_5);
+            } else if (list_item_text_6.getVisibility() == View.GONE) {
+                fadeIn(list_item_text_6);
+            } else {
                 MainActivity.nextViewpager();
             }
         }
 
 
     }
-
-
-
 
 
     private void checkRightSwipingListItem(int i) {
-        if(i==1){
-            if(list_item_text_1.getVisibility() == View.VISIBLE){
-                list_item_text_1.setVisibility(View.GONE);
-            }else{
+        if (i == 1) {
+            if (list_item_text_1.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_1);
+            } else {
                 MainActivity.previousViewpager();
             }
-        }else if( i==2){
-            if(list_item_text_2.getVisibility() == View.VISIBLE){
-                list_item_text_2.setVisibility(View.GONE);
-            }else if(list_item_text_1.getVisibility() == View.VISIBLE){
-                list_item_text_1.setVisibility(View.GONE);
-            }else{
+        } else if (i == 2) {
+            if (list_item_text_2.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_2);
+            } else if (list_item_text_1.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_1);
+            } else {
                 MainActivity.previousViewpager();
             }
-        }else if( i==3){
-            if(list_item_text_3.getVisibility() == View.VISIBLE){
-                list_item_text_3.setVisibility(View.GONE);
-            }else if(list_item_text_2.getVisibility() == View.VISIBLE){
-                list_item_text_2.setVisibility(View.GONE);
-            }else if(list_item_text_1.getVisibility() == View.VISIBLE){
-                list_item_text_1.setVisibility(View.GONE);
-            }else{
+        } else if (i == 3) {
+            if (list_item_text_3.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_3);
+            } else if (list_item_text_2.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_2);
+            } else if (list_item_text_1.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_1);
+            } else {
                 MainActivity.previousViewpager();
             }
-        }else if( i==4){
-            if(list_item_text_4.getVisibility() == View.VISIBLE){
-                list_item_text_4.setVisibility(View.GONE);
-            }else if(list_item_text_3.getVisibility() == View.VISIBLE){
-                list_item_text_3.setVisibility(View.GONE);
-            }else if(list_item_text_2.getVisibility() == View.VISIBLE){
-                list_item_text_2.setVisibility(View.GONE);
-            }else if(list_item_text_1.getVisibility() == View.VISIBLE){
-                list_item_text_1.setVisibility(View.GONE);
-            }else{
+        } else if (i == 4) {
+            if (list_item_text_4.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_4);
+            } else if (list_item_text_3.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_3);
+            } else if (list_item_text_2.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_2);
+            } else if (list_item_text_1.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_1);
+            } else {
                 MainActivity.previousViewpager();
             }
-        }else if( i==5){
-            if(list_item_text_5.getVisibility() == View.VISIBLE){
-                list_item_text_5.setVisibility(View.GONE);
-            }else if(list_item_text_4.getVisibility() == View.VISIBLE){
-                list_item_text_4.setVisibility(View.GONE);
-            }else if(list_item_text_3.getVisibility() == View.VISIBLE){
-                list_item_text_3.setVisibility(View.GONE);
-            }else if(list_item_text_2.getVisibility() == View.VISIBLE){
-                list_item_text_2.setVisibility(View.GONE);
-            }else if(list_item_text_1.getVisibility() == View.VISIBLE){
-                list_item_text_1.setVisibility(View.GONE);
-            }
-            else{
+        } else if (i == 5) {
+            if (list_item_text_5.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_5);
+            } else if (list_item_text_4.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_4);
+            } else if (list_item_text_3.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_3);
+            } else if (list_item_text_2.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_2);
+            } else if (list_item_text_1.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_1);
+            } else {
                 MainActivity.previousViewpager();
             }
-        }else {
-            if(list_item_text_6.getVisibility() == View.VISIBLE){
-                list_item_text_6.setVisibility(View.GONE);
-            }else if(list_item_text_5.getVisibility() == View.VISIBLE){
-                list_item_text_5.setVisibility(View.GONE);
-            }else if(list_item_text_4.getVisibility() == View.VISIBLE){
-                list_item_text_4.setVisibility(View.GONE);
-            }else if(list_item_text_3.getVisibility() == View.VISIBLE){
-                list_item_text_3.setVisibility(View.GONE);
-            }else if(list_item_text_2.getVisibility() == View.VISIBLE){
-                list_item_text_2.setVisibility(View.GONE);
-            }else if(list_item_text_1.getVisibility() == View.VISIBLE){
-                list_item_text_1.setVisibility(View.GONE);
-            }
-            else{
+        } else {
+            if (list_item_text_6.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_6);
+
+            } else if (list_item_text_5.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_5);
+            } else if (list_item_text_4.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_4);
+            } else if (list_item_text_3.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_3);
+            } else if (list_item_text_2.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_2);
+            } else if (list_item_text_1.getVisibility() == View.VISIBLE) {
+                fadeOut(list_item_text_1);
+            } else {
                 MainActivity.previousViewpager();
             }
         }
 
 
     }
+
+    public void fadeOut(final TextView tx) {
+        Animation fadeout = new ExitAnimationUtility().getAnimation(500, 0, getContext());
+        fadeout.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                tx.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        tx.startAnimation(fadeout);
+
+    }
+
+    public void fadeIn(final TextView tx) {
+        tx.setVisibility(View.VISIBLE);
+        Animation fadeout = new EntryAnimationUtility().getAnimation(500, 0, getContext());
+        fadeout.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        tx.startAnimation(fadeout);
+    }
+
+
+
 
 }

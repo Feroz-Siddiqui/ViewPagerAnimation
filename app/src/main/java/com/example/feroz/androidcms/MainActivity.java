@@ -13,17 +13,11 @@ import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Interpolator;
 
-import com.eftimoff.viewpagertransformers.BackgroundToForegroundTransformer;
 import com.eftimoff.viewpagertransformers.DefaultTransformer;
-import com.eftimoff.viewpagertransformers.DepthPageTransformer;
-import com.eftimoff.viewpagertransformers.ForegroundToBackgroundTransformer;
-import com.eftimoff.viewpagertransformers.RotateDownTransformer;
-import com.eftimoff.viewpagertransformers.StackTransformer;
-import com.eftimoff.viewpagertransformers.ZoomOutTranformer;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
 import com.example.feroz.androidcms.cmsslide.Presentation;
-import com.example.feroz.androidcms.cmstemplate.FixedSpeedScroller;
-import com.example.feroz.androidcms.cmstemplate.LockableViewPager;
+import com.example.feroz.androidcms.viewPagerUtility.FixedSpeedScroller;
+import com.example.feroz.androidcms.viewPagerUtility.LockableViewPager;
 
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
@@ -103,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         viewPager.setSwipeLocked(true);
-       // viewPager.setOffscreenPageLimit(cmsSlides.size());
+     // viewPager.setOffscreenPageLimit(5);
 
 
     }
@@ -130,7 +124,9 @@ public class MainActivity extends AppCompatActivity {
 
     public  void setViewPagerTransformation(int position){
         System.out.println("setViewPagerTransformation ... "+position);
-        if(position ==1){
+        viewPager.setPageTransformer(true, new DefaultTransformer());
+
+       /* if(position ==1){
             //FlipHorizontalTransformer
             viewPager.setPageTransformer(true, new BackgroundToForegroundTransformer());
 
@@ -177,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             viewPager.setPageTransformer(true, new ZoomOutTranformer());
 
-        }
+        }*/
     }
 
     public int getRandomNumber(){

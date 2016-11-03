@@ -1,4 +1,4 @@
-package com.example.feroz.androidcms.cmstemplate;
+package com.example.feroz.androidcms.viewPagerUtility;
 
 /**
  * Created by Feroz on 22-10-2016.

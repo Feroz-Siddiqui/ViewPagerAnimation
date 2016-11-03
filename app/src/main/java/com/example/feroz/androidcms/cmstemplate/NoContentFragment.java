@@ -16,6 +16,8 @@ import android.widget.LinearLayout;
 import com.example.feroz.androidcms.MainActivity;
 import com.example.feroz.androidcms.R;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
+import com.example.feroz.androidcms.mediaUtility.ImageSaver;
+import com.example.feroz.androidcms.viewPagerUtility.OnSwipeTouchListener;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -30,6 +32,9 @@ public class NoContentFragment extends Fragment{
     private Picasso mPicasso;
     private CMSSlide cmsSlide;
     private LinearLayout main_layout;
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.no_title, container, false);
@@ -103,7 +108,7 @@ public class NoContentFragment extends Fragment{
     }
 
     void imageUtility(CMSSlide cmsSlide, Context context, ImageView image, Picasso mPicasso) {
-
+        Bitmap bitmap;
         if (cmsSlide != null && cmsSlide.getImage_BG() != null) {
             int index = cmsSlide.getImage_BG().lastIndexOf("/");
             String bg_image_name = cmsSlide.getImage_BG().substring(index, cmsSlide.getImage_BG().length()).replace("/", "");
@@ -121,7 +126,7 @@ public class NoContentFragment extends Fragment{
             System.out.println("External storage : "+externalReadable+"\nfile_exist :" + file_exist);
 
             if (file_exist) {
-                Bitmap bitmap = new ImageSaver(context).
+                bitmap = new ImageSaver(context).
                         setFileName(bg_image_name).
                         setExternal(externalReadable).
                         load();
@@ -133,7 +138,7 @@ public class NoContentFragment extends Fragment{
                         new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);
 
-                Bitmap bitmap = null;
+                bitmap = null;
 
                 try {
                     URL url = new URL("http://api.talentify.in"+cmsSlide.getImage_BG());
@@ -147,9 +152,14 @@ public class NoContentFragment extends Fragment{
                             setFileName(bg_image_name).
                             setExternal(externalWritable).
                             save(bitmap);
+                    bitmap.recycle();
                 }
             }
 
+           /* if (bitmap != null && !bitmap.isRecycled()) {
+                bitmap.recycle();
+                bitmap = null;
+            }*/
         }
     }
 
