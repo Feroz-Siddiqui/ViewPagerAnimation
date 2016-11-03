@@ -14,27 +14,27 @@ import java.io.InputStream;
  * Created by AJITH on 03-11-2016.
  */
 
-public class AudioSaver {
-    private String directoryName = "images";
-    private String fileName = "image.png";
+public class AudioVideoSaver {
+    private String directoryName = "Talentify";
+    private String fileName = "image.mp3";
     private Context context;
     private boolean external;
 
-    public AudioSaver(Context context) {
+    public AudioVideoSaver(Context context) {
         this.context = context;
     }
 
-    public AudioSaver setFileName(String fileName) {
+    public AudioVideoSaver setFileName(String fileName) {
         this.fileName = fileName;
         return this;
     }
 
-    public AudioSaver setExternal(boolean external) {
+    public AudioVideoSaver setExternal(boolean external) {
         this.external = external;
         return this;
     }
 
-    public AudioSaver setDirectoryName(String directoryName) {
+    public AudioVideoSaver setDirectoryName(String directoryName) {
         this.directoryName = directoryName;
         return this;
     }
@@ -100,6 +100,11 @@ public class AudioSaver {
     public File load() {
         File file = createFile();
         return file;
+    }
+
+    public boolean checkFile() {
+        File file = createFile();
+        return file.exists();
     }
 
     public boolean deleteFile(){ File file = createFile(); return file.delete(); }

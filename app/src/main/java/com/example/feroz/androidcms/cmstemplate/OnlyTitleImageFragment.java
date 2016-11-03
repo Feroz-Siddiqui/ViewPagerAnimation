@@ -71,11 +71,12 @@ public class OnlyTitleImageFragment extends Fragment {
         if (cmsSlide != null && cmsSlide.getTitle() != null) {
             title.setText(cmsSlide.getTitle());
         }
-
+        title.setVisibility(View.GONE);
         imageUtility(cmsSlide, getContext(), image, mPicasso);
 
+
         if(flag)
-            image.setVisibility(View.VISIBLE);
+            title.setVisibility(View.VISIBLE);
 
         main_layout.setOnTouchListener(new OnSwipeTouchListener(getContext()) {
             public void onSwipeTop() {
@@ -85,7 +86,7 @@ public class OnlyTitleImageFragment extends Fragment {
             public void onSwipeRight() {
                 System.out.println("right");
 
-                if (image.getVisibility() == View.VISIBLE) {
+                if (title.getVisibility() == View.VISIBLE) {
                     final Animation slide_down = AnimationUtils.loadAnimation(getContext(),
                             R.anim.exit_to_left);
                     slide_down.setAnimationListener(new Animation.AnimationListener() {
@@ -96,7 +97,7 @@ public class OnlyTitleImageFragment extends Fragment {
 
                         @Override
                         public void onAnimationEnd(Animation animation) {
-                            image.setVisibility(View.GONE);
+                            title.setVisibility(View.GONE);
                         }
 
                         @Override
@@ -105,7 +106,7 @@ public class OnlyTitleImageFragment extends Fragment {
                         }
                     });
                     slide_down.setDuration(300);
-                    image.startAnimation(slide_down);
+                    title.startAnimation(slide_down);
                 } else {
                     MainActivity.previousViewpager();
                 }
@@ -114,9 +115,9 @@ public class OnlyTitleImageFragment extends Fragment {
             public void onSwipeLeft() {
                 System.out.println("left");
 
-                if (image.getVisibility() == View.GONE) {
-                    image.setVisibility(View.VISIBLE);
-                    image.startAnimation(new AnimateLayoutUtility().getAnimation(700,14,getContext()));
+                if (title.getVisibility() == View.GONE) {
+                    title.setVisibility(View.VISIBLE);
+                    title.startAnimation(new AnimateLayoutUtility().getAnimation(700,14,getContext()));
                 } else {
 
                     MainActivity.nextViewpager();
@@ -132,12 +133,13 @@ public class OnlyTitleImageFragment extends Fragment {
                 return gestureDetector.onTouchEvent(event);
             }
         });
+        image.startAnimation(new AnimateLayoutUtility().getAnimation(700,14,getContext()));
 
         return view;
     }
 
     void imageUtility(CMSSlide cmsSlide, Context context, ImageView image, Picasso mPicasso) {
-        image.setVisibility(View.GONE);
+
         Bitmap bitmap;
         if (cmsSlide != null && cmsSlide.getImage() != null && cmsSlide.getImage().getUrl() != null) {
             int index = cmsSlide.getImage().getUrl().lastIndexOf("/");
@@ -161,6 +163,8 @@ public class OnlyTitleImageFragment extends Fragment {
                         setExternal(externalReadable).
                         load();
                 image.setImageBitmap(bitmap);
+
+
             } else {
                 mPicasso.load("http://api.talentify.in" + cmsSlide.getImage().getUrl()).into(image);
 
