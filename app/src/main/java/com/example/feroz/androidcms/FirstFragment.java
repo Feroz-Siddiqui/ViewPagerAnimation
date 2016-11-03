@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
-import com.example.feroz.androidcms.viewPagerutility.OnSwipeTouchListener;
+import com.example.feroz.androidcms.viewpagerutility.OnSwipeTouchListener;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 

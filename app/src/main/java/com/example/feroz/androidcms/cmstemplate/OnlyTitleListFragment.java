@@ -18,7 +18,7 @@ import com.example.feroz.androidcms.animation.EntryAnimationUtility;
 import com.example.feroz.androidcms.animation.ExitAnimationUtility;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
 import com.example.feroz.androidcms.cmsslide.CMSTextItem;
-import com.example.feroz.androidcms.viewPagerutility.OnSwipeTouchListener;
+import com.example.feroz.androidcms.viewpagerutility.OnSwipeTouchListener;
 import com.squareup.picasso.Picasso;
 
 

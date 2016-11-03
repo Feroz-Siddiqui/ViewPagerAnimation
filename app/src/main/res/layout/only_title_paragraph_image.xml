@@ -42,7 +42,7 @@
                     android:textColor="@android:color/white"
                     android:text="What are the action and interaction"
                     android:textSize="30sp"
-                    android:background="#"
+                    android:background="#000"
                     android:textStyle="bold" />
 
             </RelativeLayout>

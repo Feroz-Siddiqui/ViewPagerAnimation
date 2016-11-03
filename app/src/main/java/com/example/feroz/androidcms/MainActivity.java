@@ -16,8 +16,8 @@ import android.view.animation.Interpolator;
 import com.eftimoff.viewpagertransformers.DefaultTransformer;
 import com.example.feroz.androidcms.cmsslide.CMSSlide;
 import com.example.feroz.androidcms.cmsslide.Presentation;
-import com.example.feroz.androidcms.viewPagerutility.FixedSpeedScroller;
-import com.example.feroz.androidcms.viewPagerutility.LockableViewPager;
+import com.example.feroz.androidcms.viewpagerutility.FixedSpeedScroller;
+import com.example.feroz.androidcms.viewpagerutility.LockableViewPager;
 
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;

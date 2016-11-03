@@ -1,4 +1,4 @@
-package com.example.feroz.androidcms.viewPagerutility;
+package com.example.feroz.androidcms.viewpagerutility;
 
 /**
  * Created by Feroz on 24-10-2016.
